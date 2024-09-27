@@ -6,7 +6,7 @@ class CartAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: Colors.transparent,
       padding: EdgeInsets.all(25),
       child: Row(
         children: [
@@ -14,27 +14,27 @@ class CartAppBar extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
             },
-            child: Icon(
+            child: const Icon(
               Icons.arrow_back,
               size: 30,
-              color: Color(0xFF4C53A5),
+              color: Colors.lightBlue,
             ),
           ),
           const Padding(
             padding: EdgeInsets.only(left: 20),
             child: Text(
-              'Cart',
+              'Keranjang',
               style: TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.bold,
-                color: Color(0xFF4C53A5)),
+                color: Colors.lightBlue),
             ),
           ),
           const Spacer(),
           const Icon(
-            Icons.more_vert,
+            Icons.info,
             size: 30,
-            color: Color(0xFF4C53A5),
+            color: Colors.lightBlue,
           ),
         ],
       ),

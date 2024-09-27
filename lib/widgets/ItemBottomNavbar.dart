@@ -7,15 +7,16 @@ class ItemBottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
+      color: Colors.lightBlue,
       child: Container(
         height: 70,
         padding: EdgeInsets.symmetric(horizontal: 20),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Colors.blue,
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.withOpacity(0.5),
+              color: Colors.white.withOpacity(0.5),
               spreadRadius: 3,
               blurRadius: 10,
               offset: Offset(0, 3),
@@ -26,37 +27,37 @@ class ItemBottomNavBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              '\$120',
+              '\Rp: 15.000',
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
-                color: Color(0xFF4C53A5),
+                color: Colors.white,
               ),
             ),
             ElevatedButton.icon(
               onPressed: () {},
-              icon: Icon(CupertinoIcons.cart_badge_plus),
+              icon: Icon(Icons.shopping_cart, color: Colors.lightBlue,),
               label: Text(
-                'Add to Cart',
+                'Tambahkan',
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
-                  color: Colors.white,
+                  color: Colors.lightBlue,
                 ),
               ),
               style: ButtonStyle(
                   backgroundColor: WidgetStateProperty.all(
-                    Color(0xFF4C53A5),
+                    Colors.white,
                   ),
                   padding: WidgetStateProperty.all(
                     EdgeInsets.symmetric(
                       vertical: 13,
-                      horizontal: 15,
+                      horizontal: 25,
                     ),
                   ),
                   shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30),
+                    borderRadius: BorderRadius.circular(15),
                   ))),
             ),
           ],

@@ -7,7 +7,7 @@ class CartItemSamples extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        for (int i = 1; i < 3; i++)
+        for (int i = 7; i < 9; i++)
           Container(
             height: 110,
             margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
@@ -20,7 +20,7 @@ class CartItemSamples extends StatelessWidget {
                 Radio(
                   value: "",
                   groupValue: "",
-                  activeColor: Color(0xFF4C53A5),
+                  activeColor: Colors.blue,
                   onChanged: (index) {},
                 ),
                 Container(
@@ -36,19 +36,19 @@ class CartItemSamples extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Product Title',
+                        'Kaget 50 GB',
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
-                          color: Color(0xFF4C53A5),
+                          color: Colors.black,
                         ),
                       ),
                       Text(
-                        "\$55",
+                        "\Rp: 15.000",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          color: Color(0xFF4C53A5),
+                          color: Colors.black,
                         ),
                       ),
                     ],
@@ -92,7 +92,7 @@ class CartItemSamples extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
-                                color: Color(0xFF4C53A5),
+                                color: Colors.blue,
                               ),
                             ),
                           ),
@@ -123,6 +123,6 @@ class CartItemSamples extends StatelessWidget {
             ),
           )
       ],
-    );;
+    );
   }
 }

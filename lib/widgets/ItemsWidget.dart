@@ -5,10 +5,11 @@ class ItemsWidget extends StatelessWidget {
   ItemsWidget({super.key});
 
   List<String> myProductName = [
-    'Dasi idn',
-    'Sepatu idn',
-    'Seragam 1 idn',
-    'Seragam 2 idn',
+    'Yang Bikin Nagih',
+    'Yang Bikin Anti Cemas',
+    'Yang Hemat Sebulan',
+    'Kaget 50 GB',
+    'Yang Bikin Kenyang'
   ];
 
   @override
@@ -35,7 +36,7 @@ class ItemsWidget extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(5),
                       decoration: BoxDecoration(
-                        color: const Color(0xFF4C53A5),
+                        color: Colors.blue,
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: const Text(
@@ -47,7 +48,7 @@ class ItemsWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const Icon(Icons.favorite_border, color: Colors.red)
+                    const Icon(Icons.favorite_border, color: Colors.blue)
                   ],
                 ),
                 InkWell(
@@ -57,7 +58,7 @@ class ItemsWidget extends StatelessWidget {
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     child: Image.asset(
-                      'images/${i + 1}.jpeg', // Tambahkan +1 karena file gambar dimulai dari 1
+                      'images/${i + 5}.jpeg', // Tambahkan +1 karena file gambar dimulai dari 1
                       height: 100,
                       width: 100,
                     ),
@@ -70,7 +71,7 @@ class ItemsWidget extends StatelessWidget {
                     myProductName[i], // Tampilkan nama produk
                     style: const TextStyle(
                       fontSize: 16,
-                      color: Color(0xFF4C53A5),
+                      color: Colors.black,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -78,10 +79,10 @@ class ItemsWidget extends StatelessWidget {
                 Container(
                   alignment: Alignment.centerLeft,
                   child: const Text(
-                    'Write description of product',
+                    'Termasuk SIM Card',
                     style: TextStyle(
                       fontSize: 14,
-                      color: Color(0xFF4C53A5),
+                      color: Colors.lightBlue,
                     ),
                   ),
                 ),
@@ -91,16 +92,16 @@ class ItemsWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        '\$55',
+                        '\Rp: 15.000',
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
-                          color: Color(0xFF4C53A5),
+                          color: Colors.black,
                         ),
                       ),
                       Icon(
                         Icons.shopping_cart_checkout,
-                        color: Color(0xFF4C53A5),
+                        color: Colors.blue,
                       )
                     ],
                   ),

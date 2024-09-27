@@ -9,7 +9,7 @@ class CategorisWidget extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          for (int i = 1; i < 5; i++)
+          for (int i = 5; i < 9; i++)
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 10),
             padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
@@ -25,11 +25,11 @@ class CategorisWidget extends StatelessWidget {
                   height: 40,
                 ),
                 const Text(
-                  'Sandal',
+                  'Paket',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 17,
-                    color: Color(0xFF4C53A5)
+                    color: Colors.black
                   ),
                 )
               ],

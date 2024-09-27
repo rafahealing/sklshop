@@ -15,10 +15,12 @@ class CartPage extends StatelessWidget {
           Container(
             padding: const EdgeInsets.only(top: 15),
             decoration: const BoxDecoration(
-              color: Color(0xFFEDECF),
+              color: Colors.lightBlue,
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(35),
                 topRight: Radius.circular(35),
+                bottomLeft: Radius.circular(15),
+                bottomRight: Radius.circular(15)
               ),
             ),
             child: Column(
@@ -31,7 +33,7 @@ class CartPage extends StatelessWidget {
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                          color: const Color(0xFF4C53A5),
+                          color: Colors.blue,
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: const Icon(
@@ -42,9 +44,9 @@ class CartPage extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.symmetric(horizontal: 10),
                         child: Text(
-                          'Add Coupon Code',
+                          'Cek kupon',
                           style: TextStyle(
-                            color: Color(0xFF4C53A5),
+                            color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
                           ),

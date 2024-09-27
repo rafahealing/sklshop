@@ -9,8 +9,8 @@ class ItemPage extends StatelessWidget {
 
   List<Color> myColor = [
     Colors.red,
-    Colors.black,
-    Colors.blue,
+    Colors.orange,
+    Colors.grey,
     Colors.green,
     Colors.purple,
   ];
@@ -18,14 +18,14 @@ class ItemPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFEDECF),
+      backgroundColor: Colors.white,
       body: ListView(
         children: [
           ItemAppBar(),
           Padding(
             padding: EdgeInsets.all(16),
             child: Image.asset(
-              'images/4.jpeg',
+              'images/5.jpeg',
               height: 300,
             ),
           ),
@@ -35,7 +35,7 @@ class ItemPage extends StatelessWidget {
             height: 30,
             child: Container(
               width: double.infinity,
-              color: Colors.white,
+              color: Colors.lightBlue,
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 child: Column(
@@ -48,10 +48,10 @@ class ItemPage extends StatelessWidget {
                       child: Row(
                         children: [
                           Text(
-                            'Product Title',
+                            'Paket Hihuyy',
                             style: TextStyle(
                               fontSize: 28,
-                              color: Color(0xFF4C53A5),
+                              color: Colors.white,
                               fontWeight: FontWeight.bold,
                             ),
                           )
@@ -76,7 +76,7 @@ class ItemPage extends StatelessWidget {
                                 const EdgeInsets.symmetric(horizontal: 4),
                             itemBuilder: (context, _) => const Icon(
                               Icons.favorite,
-                              color: Color(0xFF4C53A5),
+                              color: Colors.red,
                             ),
                             onRatingUpdate: (index) {},
                           ),
@@ -108,7 +108,7 @@ class ItemPage extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
-                                    color: Color(0xFF4C53A5),
+                                    color: Colors.white,
                                   ),
                                 ),
                               ),
@@ -139,11 +139,11 @@ class ItemPage extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.symmetric(vertical: 10),
                       child: Text(
-                        'This is more detailed description of the product you can write here more about the product, this is lenght description',
+                        'by.CIHUYY menawarkan kuota yang bisa dipake 24 jam, dimanapun, kapanpun, dan dijaringan manapun (3G/4G). Yuk, beli sekarang!',
                         textAlign: TextAlign.justify,
                         style: TextStyle(
                           fontSize: 17,
-                          color: Color(0xFF4C53A5),
+                          color: Colors.white,
                         ),
                       ),
                     ),
@@ -152,10 +152,10 @@ class ItemPage extends StatelessWidget {
                       child: Row(
                         children: [
                           Text(
-                            'Size',
+                            'Berapa GB:',
                             style: TextStyle(
                               fontSize: 18,
-                              color: Color(0xFF4C53A5),
+                              color: Colors.white,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -186,7 +186,7 @@ class ItemPage extends StatelessWidget {
                                     style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
-                                      color: Color(0xFF4C53A5),
+                                      color: Colors.black,
                                     ),
                                   ),
                                 )
@@ -200,10 +200,10 @@ class ItemPage extends StatelessWidget {
                       child: Row(
                         children: [
                           Text(
-                            'Color',
+                            'Tipe Paket:',
                             style: TextStyle(
                               fontSize: 18,
-                              color: Color(0xFF4C53A5),
+                              color: Colors.white,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
